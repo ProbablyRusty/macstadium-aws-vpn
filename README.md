@@ -46,7 +46,7 @@ First some prerequisites:
 
 
 	```bash
-	brew install terraform	
+	brew install terraform
 	```
 - [AWS API Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) with sufficient privileges for creating VPC and EC2 resources for the AWS account you will be working with will be needed.
 
@@ -208,7 +208,6 @@ AWS Secret Key for a valid pair of API credentials for your AWS asccount (for ex
 ##### Variable: `macstadium_cidr`
 
 Network for the Private-1 network of the MacStadium Private Cloud in CIDR notation, (for example: `10.254.20.0/24`), provided by MacStadium in your IP_PLAN document.
-macstadium_cidr = "CUSTOMIZE_THIS"
 
 ##### Variable: `cisco_inside_1_ip_address`
 
@@ -265,4 +264,3 @@ If you set `needed_in_aws` to `create_vpc`, then specify the number of Amazon Li
 ##### Variable: `number_of_macstadium_test_instances`
 
 If you set `create_macstadium_test_instances` to `true`, then specify the number of test VMs you would like to automatically create inside of your MacStadium Private Cloud. This VMs will need to be based on a Virtual Machine Template which you previously have uploaded or created by you in VCenter (see: `macstadium_vcenter_vm_template_name`).
-
