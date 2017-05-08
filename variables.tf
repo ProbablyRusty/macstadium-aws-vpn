@@ -8,7 +8,7 @@ variable "needed_in_aws" {
 
   Set to 'create_vpc' if you want to create a new AWS VPC, AWS Virtual Private
   Gateway, AWS VPN, and (optionally) one or more t2.nano Amazon Linux test
-  Instances inside of this new AWS VPC. This is the best option if you currnetly
+  Instances inside of this new AWS VPC. This is the best option if you currently
   have no infrastructure in AWS, or if you want to demo or experiment with this
   automated process.
 
@@ -158,7 +158,7 @@ variable "cisco_firewall_password" {
   type = "string"
 
   description = <<EOF
-  Passsword for the MacStadium Cisco firewall, provided by MacStadium in your
+  Password for the MacStadium Cisco firewall, provided by MacStadium in your
   IP_PLAN document.
   EOF
 }

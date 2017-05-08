@@ -6,7 +6,7 @@
 #
 # Set to 'create_vpc' if you want to create a new AWS VPC, AWS Virtual Private
 # Gateway, AWS VPN, and (optionally) one or more t2.nano Amazon Linux test
-# Instances inside of this new AWS VPC. This is the best option if you currnetly
+# Instances inside of this new AWS VPC. This is the best option if you currently
 # have no infrastructure in AWS, or if you want to demo or experiment with this
 # automated process.
 #
@@ -184,7 +184,7 @@ macstadium_vcenter_vm_template_name = "CUSTOMIZE_THIS"
 # That key file will be named 'macstadium_aws_key'. Also note that if you do not
 # want to create any Amazon Linux test instances in this scenario, you may set
 # this value to 0.
-number_of_aws_test_instances = "2"
+number_of_aws_test_instances = "0"
 
 # Variable: 'number_of_macstadium_test_instances'
 #
@@ -193,4 +193,4 @@ number_of_aws_test_instances = "2"
 # MacStadium Private Cloud. This VMs will need to be based on a Virtual Machine
 # Template which you previously have uploaded or created by you in VCenter (see:
 # 'macstadium_vcenter_vm_template_name').
-number_of_macstadium_test_instances = "2"
+number_of_macstadium_test_instances = "0"
