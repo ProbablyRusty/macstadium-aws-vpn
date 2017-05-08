@@ -46,10 +46,9 @@ existing_vpc_id = "CUSTOMIZE_THIS"
 
 # Variable: 'existing_vgw_id'
 #
-# If you set 'needed_in_aws' to 'create_gateway' or 'just_vpn', then you need to
-# provide a Virtual Private Gateway ID (for example: 'vgw-1234abcd') of an
-# already-existing Virtual Private Gateway (located in the AWS Region you
-# specified).
+# If you set 'needed_in_aws' to 'just_vpn', then you need to provide a Virtual
+# Private Gateway ID (for example: 'vgw-1234abcd') of an already-existing
+# Virtual Private Gateway (located in the AWS Region you specified).
 #
 # If you set 'needed_in_aws' to 'create_vpc' or 'create_gateway', then you may
 # set this to 'none', since a brand new Virtual Private Gateway will be
