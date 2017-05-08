@@ -134,7 +134,7 @@ Appendix: Reference List of Variables
 -------------------------------------
 
 - [`needed_in_aws`](#variable-needed_in_aws)
-- [`aws_vpc_cidr`](#variable-aws_vpc_cidr)`
+- [`aws_vpc_cidr`](#variable-aws_vpc_cidr)
 - [`existing_vpc_id`](#variable-existing_vpc_id)
 - [`existing_vgw_id`](#variable-existing_vgw_id)
 - [`vpc_route_table_ids`](#variable-vpc_route_table_ids)
