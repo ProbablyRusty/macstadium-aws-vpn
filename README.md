@@ -39,7 +39,7 @@ First some prerequisites:
 - You should have a local copy of this repo on your own computer. One very easy way to obtain it is simply to clone it from GitHub:
 
 	```bash
-	git clone https://github.com/consultantRR/macstadium-aws-vpn.git
+	git clone https://github.com/ProbablyRusty/macstadium-aws-vpn.git
 	```
 
 - You'll definitely need to have [Terraform](https://www.terraform.io) installed. One easy way to do that on a Mac would be to use [Homebrew](https://brew.sh) as follows:

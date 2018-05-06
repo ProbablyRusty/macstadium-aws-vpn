@@ -1,5 +1,5 @@
 module "aws_vpc_infrastructure" {
-  source                   = "github.com/consultantRR/macstadium-aws-vpn-master//aws_vpc_infrastructure"
+  source                   = "github.com/ProbablyRusty/macstadium-aws-vpn-master//aws_vpc_infrastructure"
   create_vpc               = "${var.needed_in_aws == "create_vpc" ? 1 : 0}"
   aws_region               = "${var.aws_region}"
   aws_access_key           = "${var.aws_access_key}"
@@ -10,7 +10,7 @@ module "aws_vpc_infrastructure" {
 }
 
 module "macstadium_aws_vpn" {
-  source                    = "github.com/consultantRR/macstadium-aws-vpn-master//macstadium_aws_vpn"
+  source                    = "github.com/ProbablyRusty/macstadium-aws-vpn-master//macstadium_aws_vpn"
   need_vpg                  = "${(var.needed_in_aws == "create_vpc") || (var.needed_in_aws == "create_gateway") ? "true" : "false"}"
   aws_region                = "${var.aws_region}"
   aws_access_key            = "${var.aws_access_key}"
@@ -28,7 +28,7 @@ module "macstadium_aws_vpn" {
 }
 
 module "macstadium_vsphere" {
-  source                                   = "github.com/consultantRR/macstadium-aws-vpn-master//macstadium_vsphere"
+  source                                   = "github.com/ProbablyRusty/macstadium-aws-vpn-master//macstadium_vsphere"
   create_macstadium_test_instances         = "${var.create_macstadium_test_instances == "true" ? 1 : 0}"
   macstadium_vcenter_management_username   = "${var.macstadium_vcenter_management_username}"
   macstadium_vcenter_management_password   = "${var.macstadium_vcenter_management_password}"
